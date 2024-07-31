@@ -1,6 +1,8 @@
+import { useState } from "react"
+
 export default function Player({name  , symbol}) { 
 
-
+    const [isEditing , SetIsEditing] = useState(false);
 
     return (
         <li>
@@ -10,5 +12,6 @@ export default function Player({name  , symbol}) {
             </span>
             <button>Edit</button>
         </li>
+        
     )
 }
